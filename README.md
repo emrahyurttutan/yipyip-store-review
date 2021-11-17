@@ -132,30 +132,30 @@ protected List<ReactPackage> getPackages() {
 # Usage
 
 ```javascript
-import InAppReview from 'yipyip-store-review';
+import StoreReview from 'yipyip-store-review';
 ```
 
 ```javascript
 // This package is only available on android version >= 21 and iOS >= 10.3
 
 // Give you result if version of device supported to rate app or not!
-InAppReview.isAvailable();
+StoreReview.isAvailable();
 
-// trigger UI InAppreview
-InAppReview.RequestInAppReview()
+// trigger UI StoreReview
+StoreReview.RequestStoreReview()
   .then((hasFlowFinishedSuccessfully) => {
     // when return true in android it means user finished or close review flow
-    console.log('InAppReview in android', hasFlowFinishedSuccessfully);
+    console.log('StoreReview in android', hasFlowFinishedSuccessfully);
 
     // when return true in ios it means review flow lanuched to user.
     console.log(
-      'InAppReview in ios has launched successfully',
+      'StoreReview in ios has launched successfully',
       hasFlowFinishedSuccessfully,
     );
 
     // 1- you have option to do something ex: (navigate Home page) (in android).
     // 2- you have option to do something,
-    // ex: (save date today to lanuch InAppReview after 15 days) (in android and ios).
+    // ex: (save date today to lanuch StoreReview after 15 days) (in android and ios).
 
     // 3- another option:
     if (hasFlowFinishedSuccessfully) {
@@ -175,7 +175,7 @@ InAppReview.RequestInAppReview()
   })
   .catch((error) => {
     //we continue our app flow.
-    // we have some error could happen while lanuching InAppReview,
+    // we have some error could happen while lanuching StoreReview,
     // Check table for errors and code number that can return in catch.
     console.log(error);
   });
@@ -185,7 +185,7 @@ InAppReview.RequestInAppReview()
 
 | Error Name                    | Code Number | Description                                                                                                                                                | iOS | Android |
 | ----------------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ------- |
-| ERROR_DEVICE_VERSION          | 21          | This Device not supported to launch InAppReview                                                                                                            | ✅  | ✅      |
+| ERROR_DEVICE_VERSION          | 21          | This Device not supported to launch StoreReview                                                                                                            | ✅  | ✅      |
 | GOOGLE_SERVICES_NOT_AVAILABLE | 22          | This Device doesn't support google play services                                                                                                           | ❌  | ✅      |
 | [DYNAMIC ERROR NAME]          | 23          | Unexpected error occur may return different error from different user and device check code number to get discovered errors messages that could be happen. | ❌  | ✅      |
 | ACTIVITY_DOESN'T_EXIST        | 24          | Unexpected error occur while getting activity                                                                                                              | ❌  | ✅      |

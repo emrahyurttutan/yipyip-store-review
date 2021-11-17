@@ -8,14 +8,14 @@ function isModuleAvailable() {
   if (Platform.OS === 'android') {
     if (!StoreReviewModule) {
       throw new Error(
-        'InAppReview native module not available, did you forget to link the library?',
+        'StoreReview native module not available, did you forget to link the library?',
       );
     }
     return true;
   } else if (Platform.OS === 'ios') {
     if (!RNStoreReviewIOS) {
       throw new Error(
-        'InAppReview native module not available, did you forget to link the library?',
+        'StoreReview native module not available, did you forget to link the library?',
       );
     }
     return true;
@@ -24,8 +24,8 @@ function isModuleAvailable() {
   }
 }
 
-export default class InAppReview {
-  static RequestInAppReview() {
+export default class StoreReview {
+  static RequestStoreReview() {
     if (isModuleAvailable()) {
       if (Platform.OS === 'android') {
         return StoreReviewModule.show();

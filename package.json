@@ -1,6 +1,6 @@
 {
   "name": "yipyip-store-review",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React native store review rate",
   "main": "index.js",
   "keywords": [
@@ -29,8 +29,7 @@
     "yipyip-store-review.podspec",
     "README.md",
     "index.d.ts",
-    "index.js",
-    "__tests__"
+    "index.js"
   ],
   "repository": {
     "type": "git",

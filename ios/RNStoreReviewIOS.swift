@@ -2,8 +2,8 @@ import Foundation
 import UIKit
 import StoreKit
 
-@objc(RNInAppReviewIOS)
-class RNInAppReviewIOS: NSObject {
+@objc(RNStoreReviewIOS)
+class RNStoreReviewIOS: NSObject {
 
   @objc 
   func requestReview (_ resolve: RCTPromiseResolveBlock, rejecter reject: RCTPromiseRejectBlock) -> Void {

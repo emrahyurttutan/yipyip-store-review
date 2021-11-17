@@ -3,7 +3,7 @@
 #import <UIKit/UIKit.h>
 #import "RCTBridgeModule.h"
 
-@interface RCT_EXTERN_MODULE(RNInAppReviewIOS, NSObject)
+@interface RCT_EXTERN_MODULE(RNStoreReviewIOS, NSObject)
 
 - (dispatch_queue_t)methodQueue
 {
