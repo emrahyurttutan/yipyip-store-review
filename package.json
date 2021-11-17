@@ -1,0 +1,49 @@
+{
+  "name": "yipyip-store-review",
+  "version": "0.0.1",
+  "description": "React native store review rate",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "review",
+    "app-review",
+    "in-app-review",
+    "yipyip-store-review",
+    "store-kit",
+    "android",
+    "ios",
+    "app store",
+    "play store",
+    "rate your app",
+    "review is sent to the Play Store",
+    "review is sent to the App Store",
+    "rating"
+  ],
+  "files": [
+    "android/src/main/AndroidManifest.xml",
+    "android/src/main/java/",
+    "android/build.gradle",
+    "android/",
+    "ios/",
+    "!ios/build/",
+    "yipyip-store-review.podspec",
+    "README.md",
+    "index.d.ts",
+    "index.js",
+    "__tests__"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrahyurttutan/yipyip-store-review.git"
+  },
+  "author": "Emrah Yurttutan <emrah@yurttutan.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emrahyurttutan/yipyip-store-review/issues"
+  },
+  "homepage": "https://github.com/emrahyurttutan/yipyip-store-review#readme",
+  "devDependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.4"
+  }
+}

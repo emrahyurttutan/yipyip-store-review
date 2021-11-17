@@ -1,0 +1,6 @@
+__tests__
+.vscode
+Examples/
+coverage
+.idea
+node_modules/
